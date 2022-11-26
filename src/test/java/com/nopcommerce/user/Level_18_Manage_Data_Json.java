@@ -32,7 +32,7 @@ public class Level_18_Manage_Data_Json extends BaseTest {
         homePage = PageGeneratorManager.getUserHomePage(driver);
         userData = UserDataMapper.getUserData();
 
-        email = userData.getEmail();
+        email = userData.getEmail() + generateFakeNumber() + "@gmail.com";
     }
 
     @Test
@@ -94,7 +94,6 @@ public class Level_18_Manage_Data_Json extends BaseTest {
         log.info("Login - Step 04: Click to 'Login' button");
         registerPage.clickToButtonByText(driver, "Log in");
         homePage = PageGeneratorManager.getUserHomePage(driver);
-
     }
 
     @Test
