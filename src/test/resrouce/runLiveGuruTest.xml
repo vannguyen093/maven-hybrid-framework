@@ -4,17 +4,17 @@
   <listeners>
     <listener class-name="commons.MethodListener"/>
 <!--    <listener class-name="reportConfig.ReportNGListener"/>-->
-<!--    <listener class-name="reportConfig.ExtentReportListener"/>-->
+    <listener class-name="reportConfig.ExtentReportListener"/>
 <!--    <listener class-name="reportConfig.AllureTestListener"/>-->
-<!--    <listener class-name="org.uncommons.reportng.HTMLReporter" />-->
-<!--    <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />-->
+    <listener class-name="org.uncommons.reportng.HTMLReporter" />
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
   </listeners>
 
   <parameter name="url" value="http://live.techpanda.org/index.php/" />
   <test name="Run on Firefox">
     <parameter name="browser" value="firefox" />
     <classes>
-      <class name="com.liveguru.user.Level_14_Custom_Close"/>
+      <class name="com.liveguru.user.Level_12_Extend_Report"/>
     </classes>
   </test>
 
